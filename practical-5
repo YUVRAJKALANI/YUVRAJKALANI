@@ -1,0 +1,29 @@
+ #include<iostream>
+#include<iomanip>
+
+using namespace std;
+
+class dst{
+	public:
+    float cm,inch,feet,meter,km;
+}d1;
+
+int main()
+{
+	dst d1;
+	
+	cout<<"enter the value of cm:";
+	cin>>d1.cm;
+	
+	d1.inch=0.393701*d1.cm;
+	d1.feet=0.0328084*d1.cm;
+	d1.meter=0.01*d1.cm;
+	d1.km= 1e-5*d1.cm;
+	
+	cout<<"convert in to inch"<<d1.inch<<endl;
+	cout<<"convert in to feet"<<d1.feet<<endl;
+	cout<<"convert in to meter"<<d1.meter<<endl;
+	cout<<"convert in to km"<<d1.km<<endl;
+	
+	return 0;
+}
